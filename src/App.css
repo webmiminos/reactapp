@@ -43,38 +43,42 @@ body {
 p {
   margin: 0 0 5px;
 }
-.btnDel{
-color: red;
-font-size: 10px;
-font-weight: bolder;
-}
-.news__datatm{
-  color: green;
-}
-
-.news__author {
-  text-decoration: underline;
-  color: #007DDC;
-}
-.news__count {
-  margin: 10px 0 0 0;
-  display: block;
-}
 .article {
-  background: #FFF;
+  background: #fff;
   border: 1px solid rgba(0, 89, 181, 0.82);
   width: 600px;
   margin: 0 0 5px;
   box-shadow: 2px 2px 5px -1px rgb(0, 81, 202);
   padding: 3px 5px;
 }
-.add {
+
+.comments__author {
+  text-decoration: underline;
+  color: #007ddc;
+}
+.comments__count {
+  margin: 10px 0 0 0;
+  display: block;
+}
+.test-input {
   margin: 0 5px 5px 0;
+}
+
+.add {
+  margin-left:500px;
+  margin-top: 100px;
   width: 210px;
   border: 1px dashed rgba(0, 89, 181, 0.82);
   padding: 5px;
 }
-.add__author, .add__text, .add__btn, .add__checkrule {
+h3 {
+  margin-left: 550px;
+  margin-top:30px;
+}
+.add__author,
+.add__text,
+.add__btn,
+.add__checkrule {
   display: block;
   margin: 0 0 5px 0;
   padding: 5px;
@@ -87,17 +91,15 @@ font-weight: bolder;
 }
 .add__btn {
   box-sizing: content-box;
-  color: #FFF;
+  color: #fff;
   text-transform: uppercase;
-  background: #007DDC;
+  background: #007ddc;
 }
 .add__btn:disabled {
-  background: #CCC;
+  background: #ccc;
   color: #999;
 }
-.none {
-  display: none;
-}
-.test-input {
-  margin: 0 5px 5px 0;
+.comments{
+  margin-left:500px;
+  margin-top:50px;
 }
