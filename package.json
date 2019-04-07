@@ -2,8 +2,9 @@
   "name": "reactapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://webmiminos.github.io/reactmiminos/",
+  "homepage": "https://webmiminos.github.io/reactapp",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "npm-git-install": "^0.3.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
