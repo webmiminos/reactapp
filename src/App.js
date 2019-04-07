@@ -14,6 +14,26 @@ class App extends React.Component {
         comments: null,
         isLoading: false,
     };
+    static getDerivedStateFromProps(props, state) {
+        let nextFilteredNews
+
+        if (Array.isArray(state.comments)) {
+      nextFilteredNews = [...state.comments]
+
+      nextFilteredNews.forEach((item, index) => {
+        if (item.text.toLowerCase().indexOf('<html>') !== -1) {
+          item.text = 'ТЕГИ HTML-СПАМ'
+
+
+        }
+      })
+      return {
+         filteredNews: nextFilteredNews,
+       }
+     }
+
+     return null
+   }
 
     componentDidMount() {
         this.setState({isLoading: true});
